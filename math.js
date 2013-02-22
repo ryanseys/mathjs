@@ -38,3 +38,13 @@ exports.round = Math.round;
 exports.sin = Math.sin
 exports.sqrt = Math.sqrt;
 exports.tan = Math.tan;
+
+/* Built-in constants */
+exports.E = Math.E;
+exports.LN2 = Math.LN2;
+exports.LN10 = Math.LN10;
+exports.LOG2E = Math.LOG2E;
+exports.LOG10E = Math.LOG10E;
+exports.PI = Math.PI;
+exports.SQRT1_2 = Math.SQRT1_2;
+exports.SQRT2 = Math.SQRT2;
