@@ -40,5 +40,11 @@ vows.describe('multiplication').addBatch({
     'should be 45' : function(topic) {
       assert.equal(topic, 45);
     }
+  },
+  'mul(3, 2, 3)': {
+    topic : math.mul(3, 2, 3),
+    'should be 18' : function(topic) {
+      assert.equal(topic, 18);
+    }
   }
 }).export(module);

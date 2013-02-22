@@ -1,5 +1,5 @@
 /* Add named functions for built-in operators */
-exports.add = function() {
+exports.add = exports.sum = function() {
   if(!arguments.length) return NaN;
   var sum = 0,
     i = arguments.length;
@@ -8,6 +8,7 @@ exports.add = function() {
 };
 
 exports.sub = function(x, y) {
+  if(!arguments.length) return NaN;
   return x - y;
 };
 
@@ -20,10 +21,12 @@ exports.mul = function() {
 };
 
 exports.div = function(x, y) {
+  if(!arguments.length) return NaN;
   return x / y;
 };
 
 exports.mod = function(x, y) {
+  if(!arguments.length) return NaN;
   return x % y;
 }
 
