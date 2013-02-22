@@ -1,7 +1,7 @@
 {
     "name": "mathjs",
     "version": "0.0.1",
-    "description": "A JavaScript math library.",
+    "description": "A JavaScript library for mathematics.",
     "author": "Ryan Seys <rsmseys@gmail.com> (http://ryanseys.com/)",
     "keywords": [
         "math"
