@@ -9,4 +9,4 @@ Clone this mofo: `$ git clone git@github.com:ryanseys/mathjs.git && cd mathjs`
 Install dependencies: `$ npm install`
 
 ## Usage
-Run tests: `$ mocha`
+Run tests: `$ vows --spec`
