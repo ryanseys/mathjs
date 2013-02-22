@@ -1,5 +1,6 @@
 /* Add named functions for built-in operators */
 exports.add = function() {
+  if(!arguments.length) return NaN;
   var sum = 0,
     i = arguments.length;
   while(i--) sum += arguments[i];
@@ -10,8 +11,12 @@ exports.sub = function(x, y) {
   return x - y;
 };
 
-exports.mul = function(x, y) {
-  return x * y;
+exports.mul = function() {
+  if(!arguments.length) return NaN;
+  var product = 1,
+    i = arguments.length;
+  while(i--) product *= arguments[i];
+  return product;
 };
 
 exports.div = function(x, y) {
