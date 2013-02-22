@@ -1,6 +1,9 @@
 /* Add named functions for built-in operators */
-exports.add = function(x, y) {
-  return x + y;
+exports.add = function() {
+  var sum = 0,
+    i = arguments.length;
+  while(i--) sum += arguments[i];
+  return sum;
 };
 
 exports.sub = function(x, y) {
