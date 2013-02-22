@@ -1,26 +1,26 @@
 {
-    "name": "mathjs",
-    "version": "0.0.1",
-    "description": "A JavaScript library for mathematics.",
-    "author": "Ryan Seys <rsmseys@gmail.com> (http://ryanseys.com/)",
-    "keywords": [
-        "math"
-    ],
-    "main": "./math.js",
-    "engines": {
-        "node": "*"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ryanseys/mathjs.git"
-    },
-    "bugs": {
-        "url": "https://github.com/ryanseys/mathjs/issues"
-    },
-    "devDependencies" : {
-        "mocha" : ">= 1.8.1"
-    },
-    "scripts": {
-        "test": "mocha"
-    }
+  "name": "mathjs",
+  "version": "0.0.1",
+  "description": "A JavaScript library for mathematics.",
+  "author": "Ryan Seys <rsmseys@gmail.com> (http://ryanseys.com/)",
+  "keywords": [
+    "math"
+  ],
+  "main": "./math.js",
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanseys/mathjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanseys/mathjs/issues"
+  },
+  "scripts": {
+    "test": "vows --spec"
+  },
+  "devDependencies": {
+    "vows": "0.7.0"
+  }
 }
