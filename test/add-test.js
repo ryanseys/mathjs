@@ -12,3 +12,12 @@ vows.describe('simple addition').addBatch({
     }
   }
 }).export(module);
+
+vows.describe('maximum').addBatch({
+  'max(5, 6, 7)': {
+    topic : math.max(5, 6, 7),
+    'should be 7' : function(topic) {
+      assert.equal(topic, 7);
+    }
+  }
+}).export(module);
