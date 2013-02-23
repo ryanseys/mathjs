@@ -46,5 +46,23 @@ vows.describe('multiplication').addBatch({
     'should be 18' : function(topic) {
       assert.equal(topic, 18);
     }
+  },
+  'mul(Infinity, Infinity)': {
+    topic : math.mul(Infinity, Infinity),
+    'should be Infinity' : function(topic) {
+      assert.equal(topic, Infinity);
+    }
+  },
+  'mul(Infinity, -1)': {
+    topic : math.mul(Infinity, -1),
+    'should be -Infinity' : function(topic) {
+      assert.equal(topic, -Infinity);
+    }
+  },
+  'mul(Infinity, 0)': {
+    topic : math.mul(Infinity, 0),
+    'should be NaN' : function(topic) {
+      assert.ok(true, isNaN(topic));
+    }
   }
 }).export(module);
