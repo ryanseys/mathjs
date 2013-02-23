@@ -1,5 +1,5 @@
 /* Add named functions for built-in operators */
-exports.add = exports.sum = function() {
+exports.add = function() {
   if(!arguments.length) return NaN;
   var sum = 0,
     i = arguments.length;
@@ -28,7 +28,17 @@ exports.div = function(x, y) {
 exports.mod = function(x, y) {
   if(!arguments.length) return NaN;
   return x % y;
-}
+};
+
+exports.mean = function(arr) {
+  var len = arr.length;
+  var sum = exports.sum(arr);
+  return sum/len;
+};
+
+exports.sum = function(arr) {
+  return exports.add.apply(exports.add, arr);
+};
 
 /* Exactly mimic built in functions */
 exports.pow = Math.pow;

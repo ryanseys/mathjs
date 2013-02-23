@@ -14,31 +14,31 @@ vows.describe('addition').addBatch({
   'add(42, 0)' : {
     topic: math.add(42, 0),
     'should be 42': function (topic) {
-      assert.equal (topic, 42);
+      assert.equal(topic, 42);
     }
   },
-  'sum(42, 0)' : {
-    topic: math.sum(42, 0),
+  'sum([42, 0])' : {
+    topic: math.sum([42, 0]),
     'should be 42': function (topic) {
-      assert.equal (topic, 42);
+      assert.equal(topic, 42);
     }
   },
   'add(42, 0, 1)' : {
     topic: math.add(42, 0, 1),
     'should be 43': function (topic) {
-      assert.equal (topic, 43);
+      assert.equal(topic, 43);
     }
   },
   'add(42, 0, 1, -2)' : {
     topic: math.add(42, 0, 1, -2),
     'should be 41': function (topic) {
-      assert.equal (topic, 41);
+      assert.equal(topic, 41);
     }
   },
-  'sum(42, 0, 1, -2)' : {
-    topic: math.sum(42, 0, 1, -2),
+  'sum([42, 0, 1, -2])' : {
+    topic: math.sum([42, 0, 1, -2]),
     'should be 41': function (topic) {
-      assert.equal (topic, 41);
+      assert.equal(topic, 41);
     }
   }
 }).export(module);
