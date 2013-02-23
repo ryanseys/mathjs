@@ -36,6 +36,29 @@ exports.mean = function(arr) {
   return sum/len;
 };
 
+/* sorts numbers */
+exports.sort = function(arr) {
+  return arr.sort(function (a, b){
+    return a - b;
+  });
+};
+
+exports.median = function(arr) {
+
+  arr = exports.sort(arr);
+  var median,
+      len = arr.length,
+      len_div = Math.floor(len/2);
+  if(len == 0) return NaN;
+  else if(len % 2 == 1) {
+    median = arr[len_div];
+  }
+  else {
+    median = exports.mean([arr[len_div-1], arr[len_div]])
+  }
+  return median;
+};
+
 exports.sum = function(arr) {
   return exports.add.apply(exports.add, arr);
 };
