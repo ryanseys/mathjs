@@ -54,7 +54,7 @@ exports.median = function(arr) {
     median = arr[len_div];
   }
   else {
-    median = exports.mean([arr[len_div-1], arr[len_div]])
+    median = exports.mean([arr[len_div-1], arr[len_div]]);
   }
   return median;
 };
