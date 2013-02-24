@@ -59,6 +59,23 @@ exports.median = function(arr) {
   return median;
 };
 
+exports.mode = function(arr) {
+  var counts = {};
+  var max = 0;
+  var max_val;
+  var current_val;
+  for(var i = arr.length-1; i >= 0; i--) {
+    current_val = arr[i];
+    if(!counts[current_val]) counts[current_val] = 1;
+    else counts[current_val] += 1;
+    if(max < counts[current_val]) {
+      max = counts[current_val];
+      max_val = current_val;
+    }
+  }
+  return max_val;
+}
+
 exports.sum = function(arr) {
   return exports.add.apply(exports.add, arr);
 };
